@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>0406Test</h1>
+<h2>Try to show the anser:</h2>
+
+number1:<br>
+<input type="number" name=x id="num1"><br>
+number2:<br>
+<input type="number" name=x id="num2"><br>
+<br>
+<script>
+
+function plus(p1,p2){
+var x,y
+x=parseInt(document.getElementById('num1').value);	y=parseInt(document.getElementById('num2').value);
+document.getElementById("ans").innerHTML=x+y;}
+
+function min(p1,p2){
+var x,y
+x=parseInt(document.getElementById('num1').value);	y=parseInt(document.getElementById('num2').value);
+document.getElementById("ans").innerHTML=x-y;}
+
+function mult(p1,p2){
+var x,y
+x=parseInt(document.getElementById('num1').value);	y=parseInt(document.getElementById('num2').value);
+document.getElementById("ans").innerHTML=x*y;}
+
+function div(p1,p2){
+var x,y
+x=parseInt(document.getElementById('num1').value);	y=parseInt(document.getElementById('num2').value);
+document.getElementById("ans").innerHTML=x/y;}
+
+function clean(p1,p2){
+var x,y
+x=parseInt(document.getElementById('num1').value="0");	y=parseInt(document.getElementById('num2').value="0");
+document.getElementById("ans").innerHTML=0;}
+
+</script>
+
+
+
+<output id="ans"></output>
+<button  onclick="plus()">+</button>
+<button  onclick="min()">-</button>
+<button  onclick="mult()">*</button>
+<button  onclick="div()">/</button>
+<button  onclick="clean()">c</button>
+
+
+<h2>Check the score:</h2>
+
+score:<br>
+<input type="number" name=x id="num1"><br>
+<script>
+
+function myfun(){
+	var x=document.getElementById('num1').value;
+    	if(x < 60){
+    	document.getElementById("ans").innerHTML="不及格!!";
+   	 	}
+        else{
+        document.getElementById("ans").innerHTML="及格!";
+        }
+    }
+</script>
+<p id="ans"></p>
+<button  onclick="myfun()">click</button>
+</body>
+</html>
